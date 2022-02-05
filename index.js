@@ -26,6 +26,9 @@ http.createServer((req, res) => {
       page('blog')
       break;
     case "/perpus":
+      page('perpus')
+      break;
+    case "/matematika":
       fs.readFile('./Assets/matematika kls9.pdf', (err, data) => {
         res.writeHead(200, { 'Content-Type': 'application/pdf' });
         res.write(data);
