@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+    .car-img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .card-img-top {
+      width: 345px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
+    .grid-container .card {
+      margin: 5px 10px;
+    }
+
+    .date {
+      list-style-type: none;
+      padding: 5px 10px;
+    }
+
+    .dots {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/visi-misi">Visi-Misi</a></li>
+              <li><a class="dropdown-item" href="/sambutan">Sambutan</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/perpus">Perpustakaan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://smpn23.semarangkota.go.id/uploads/sliders/20200602103747-2020-06-02sliders103742.jpg"
+          class="d-block w-100 car-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SMP NEGERI 23 SEMARANG</h5>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://smpn23.semarangkota.go.id/uploads/sliders/20191025134959-2019-10-25sliders134954.jpg"
+          class="d-block w-100 car-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SELAMAT DATANG</h5>
+          <p>WEBSITE SMP N 23 SEMARANG</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div class="container shadow-lg m-5 grid-container">
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20220126162104-2022-01-26blog161909.jpeg"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">26</li>
+            <li style="font-size: 12px;">JAN</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">PERSIAPAN PKKS SMP
+            NEGERI 23 SEMARANG</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20220113085954-2022-01-13blog085935.PNG"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">13</li>
+            <li style="font-size: 12px;">JAN</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">SMP NEGERI 23 SEMARANG MELAKSANAKAN PTM 100</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20211025103924-2021-10-25blog103921.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">25</li>
+            <li style="font-size: 12px;">OKT</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">MAULID NABI SAW SMP NEGERI 23 SEMARANG</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210928144116-2021-09-28blog144113.png"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">28</li>
+            <li style="font-size: 12px;">SEP</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">VAKSINASI KE 2 SISWA SMPN 23 SEMARANG</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210928144116-2021-09-28blog144113.png"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">06</li>
+            <li style="font-size: 12px;">SEP</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">VAKSINASI SISWA SMPN 23 SEMARANG</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210906074339-2021-09-06blog073815.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">05</li>
+            <li style="font-size: 12px;">SEP</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">PERSIAPAN TATAP MUKA SMPN 23 SEMARANG</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210525113144-2021-05-25blog113140.png"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">21</li>
+            <li style="font-size: 12px;">MEI</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">JADWAL DAN SYARAT PPDB SMP KOTA SEMARANG 2021</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210507085325-2021-05-07blog085322.PNG"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">06</li>
+            <li style="font-size: 12px;">MEI</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">PENDAFTARAN PPDB SMP KOTA SEMARANG TAHUN 2021/2022</p>
+        </div>
+      </div>
+      <div class="col card">
+        <img src="https://smpn23.semarangkota.go.id//uploads/blog/20210428134543-2021-04-28blog134538.PNG"
+          class="card-img-top" alt="...">
+        <div class="card-body d-flex">
+          <ul class="date bg-dark text-light text-center">
+            <li class="border-bottom border-light">28</li>
+            <li style="font-size: 12px;">APR</li>
+          </ul>
+          <p class="card-text dots" style="margin-left: 10px">6 LANGKAH CUCI TANGAN YANG BENAR</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
